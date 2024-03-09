@@ -8,7 +8,7 @@ WORKDIR /home/selenium-docker
 
 # Add the required files
 ADD target/docker-resources     ./
-ADD runner.sh                   runner.sh
+ADD runner.bat                  runner.bat
 
-# Start the runner.sh
-ENTRYPOINT sh runner.sh
+# Start the runner.bat
+ENTRYPOINT bat runner.bat
